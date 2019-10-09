@@ -6,6 +6,8 @@ class RoomTest < Minitest::Test
   def setup
     @room = Room.new(:bedroom, 10, 13)
     @room_k = Room.new(:kitchen, 3, 4)
+    @room_1 = Room.new(:bedroom, 10, 13)
+    @room_2 = Room.new(:bedroom, 11, 15)
   end
 
   def test_it_exists
