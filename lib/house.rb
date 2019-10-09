@@ -1,7 +1,9 @@
 class House
-  def initialize
+  def initialize(price_param, address_param)
+
   end
 end
+
 
 
 # Iteration 2
