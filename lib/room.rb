@@ -1,4 +1,6 @@
+class Room
 
+end
 
 
 # Iteration 1
