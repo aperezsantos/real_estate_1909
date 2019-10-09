@@ -20,12 +20,12 @@ class RoomTest < Minitest::Test
     assert_equal :kitchen, @room_k.category
   end
 
-  def test_length_is_10
+  def test_length
     assert_equal 10 , @room.length
     assert_equal 3, @room_k.length
   end
 
-  def test_width_is_13
+  def test_width
     assert_equal 13, @room.width
     assert_equal 4, @room_k.width
   end
