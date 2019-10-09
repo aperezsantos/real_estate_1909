@@ -1,20 +1,13 @@
 class House
-  def initialize(price_param, address_param)
+  attr_reader :price, :address
 
+  def initialize(price_param, address_param)
+    @price = price_param
+    @address = address_param
   end
 end
 
 
-
-# Iteration 2
-# Use TDD to create a House class that responds to the following interaction pattern:
-#
-# pry(main)> require './lib/room'
-# #=> true
-#
-# pry(main)> require './lib/house'
-# #=> true
-#
 # pry(main)> house = House.new("$400000", "123 sugar lane")
 # #=> #<House:0x00007fccd30375f8...>
 #
