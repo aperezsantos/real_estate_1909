@@ -1,9 +1,13 @@
 class House
-  attr_reader :price, :address
+  attr_reader :price, :address, :rooms
 
   def initialize(price_param, address_param)
     @price = price_param
     @address = address_param
+  end
+
+  def rooms
+    [@room_1, @room_2]
   end
 end
 
@@ -32,6 +36,9 @@ end
 #
 # pry(main)> house.rooms
 # #=> [#<Room:0x00007fccd29b5720...>, #<Room:0x00007fccd2985f48...>]
+
+
+
 # Iteration 3
 # Use TDD to update your House class so that it responds to the following interaction pattern:
 #
@@ -72,6 +79,10 @@ end
 #
 # pry(main)> house.area
 # #=> 1900
+
+
+
+
 # Iteration 4
 # Use TDD to update your House class so that it responds to the following interaction pattern:
 #
