@@ -1,5 +1,9 @@
 class Room
-
+  attr_reader :room
+  
+  def initialize(category_param, length_param, width_param)
+    @room = room
+  end
 end
 
 
@@ -17,6 +21,8 @@ end
 #
 # pry(main)> room.area
 # #=> 130
+
+
 # Iteration 2
 # Use TDD to create a House class that responds to the following interaction pattern:
 #
